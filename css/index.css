@@ -88,11 +88,19 @@ a {
 }
 
 .top-img {
-    background-image: url("../img/jumbo.jpg");
     width: 100%;
     background-size: cover;
     height: 153px;
     margin-bottom: 2rem;
+}
+
+.top-img--home-page {
+    background-image: url("../img/jumbo.jpg");
+
+}
+
+.top-img--about-page{
+    background-image: url("../img/jumbo-about.png");
 }
 
 .header nav ul{
