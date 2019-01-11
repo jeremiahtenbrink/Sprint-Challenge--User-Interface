@@ -12,39 +12,45 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 * {
@@ -76,7 +82,7 @@ a {
     margin: 0 auto;
 }
 
-.header{
+.header {
     margin: 2rem 0;
     display: flex;
 
@@ -99,11 +105,11 @@ a {
 
 }
 
-.top-img--about-page{
+.top-img--about-page {
     background-image: url("../img/jumbo-about.png");
 }
 
-.header nav ul{
+.header nav ul {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
@@ -121,7 +127,7 @@ a {
 .top-content .text-container {
     width: 48%;
     padding: 0 1%;
-    padding-bottom: 20px;  
+    padding-bottom: 20px;
 }
 
 .middle-content {
@@ -154,6 +160,7 @@ a {
 #teal {
     background-color: teal;
 }
+
 #gold {
     background-color: gold;
 }
@@ -221,4 +228,49 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+.about-section {
+    padding: 0 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed black
+}
+
+.info-cards-section {
+    padding: 0 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.info-cards-section__info-card {
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed black;
+    margin: 2rem 0;
+}
+
+.info-cards-section__card-text {
+    max-width: 370px;
+}
+
+.info-cards-section__card-heading {
+    padding-top: .5rem;
+}
+
+.info-cards-section__card-text {
+    padding: .5rem 0;
+}
+
+.info-cards-section__button {
+    font-size: 1rem;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: .4rem 2rem;
+    background-color: transparent;
+    border: 2px solid black;
+}
+
+.bottom-section {
+    padding: 0 1rem;
+    margin-bottom: 2rem;
 }
