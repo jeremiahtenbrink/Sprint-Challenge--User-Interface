@@ -116,6 +116,25 @@ a {
     height: 40px
 }
 
+.header__link {
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.header__link:hover {
+    padding: 1rem;
+    border-radius: 10px;
+    animation: pulsate 1s infinite;
+}
+
+.header__link.active {
+    animation: pulsate 1s infinite;
+}
+
+.header__logo {
+    animation: slidInRight 1s;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -155,6 +174,11 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+
+.box:hover {
+    animation: pulsateBig 1s infinite;
 }
 
 #teal {
@@ -268,9 +292,72 @@ footer nav a {
     padding: .4rem 2rem;
     background-color: transparent;
     border: 2px solid black;
+    transition: all .5s;
+}
+
+
+.info-cards-section__button:hover {
+    background-color: black;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0 2px 4px 2px #00000094;
 }
 
 .bottom-section {
     padding: 0 1rem;
     margin-bottom: 2rem;
+}
+
+
+@keyframes pulsate {
+    0% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0, .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+}
+
+@keyframes pulsateBig {
+    0% {
+        transform: scale(1.5);
+        box-shadow: none;
+    }
+
+    50% {
+        transform: scale(1.05);
+        box-shadow: 0 1rem 4rem rgba(0,0,0, .25);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: none;
+    }
+
+}
+
+
+@keyframes slidInRight {
+    0%{
+        opacity: 0;
+        transform: translateX(-5rem);
+    }
+
+    80% {
+        transform: translateX(1rem);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
 }
